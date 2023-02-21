@@ -152,6 +152,14 @@
   #contact_us .contact_info p {
     font-size: 18px;
   }
+  #contact_us h3 {
+    text-align: center;
+  }
+
+  #contact_us form label {
+    font-size: 18px;
+  }
+
   /*=============== #contact_us end ===============*/
   /*=============== #footer_part start ===============*/
   #footer_part {
