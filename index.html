@@ -15,16 +15,6 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- responsive css -->
     <link rel="stylesheet" href="css/responsive.css" />
-    <!-- email js -->
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init('YOUR_PUBLIC_KEY');
-      })();
-    </script>
   </head>
   <body data-bs-spy="scroll">
     <!--=============== navbar start ===============-->
@@ -333,24 +323,16 @@
           </div>
           <div class="col-lg-6 col-12">
             <h3>Send us a Message</h3>
-            <form action="">
+            <form action="" id="contactForm">
               <label for="">Name</label>
-              <input
-                type="text"
-                id="fullName"
-                placeholder="Enter Your Full Name"
-              />
+              <input type="text" id="name" placeholder="Enter Your Full Name" />
               <label for="">Contact No.</label>
               <input type="number" id="phone" placeholder="Enter Your Number" />
               <label for="">Email</label>
-              <input
-                type="email"
-                id="email_id"
-                placeholder="Enter Your Email"
-              />
+              <input type="email" id="email" placeholder="Enter Your Email" />
               <label for="">Message</label>
               <textarea placeholder="Message" id="message"></textarea>
-              <button onclick="SendMail()" type="submit">Submit</button>
+              <button type="submit">Submit</button>
             </form>
           </div>
         </div>
@@ -378,6 +360,8 @@
     <script src="js/slick.min.js"></script>
     <!-- bootstrap js -->
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- firbase Link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <!-- main js -->
     <script src="js/script.js"></script>
   </body>
